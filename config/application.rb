@@ -19,7 +19,7 @@ Bundler.require(*Rails.groups)
 module BoosterKitSwiftApi
   class Application < Rails::Application
     config.application_host = ENV.fetch('APPLICATION_HOST')
-    config.middleware.insert_after 0, Rack::CanonicalHost, config.application_host if Rails.env.production?
+    # config.middleware.insert_after 0, Rack::CanonicalHost, config.application_host if Rails.env.production?
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
