@@ -1,4 +1,4 @@
-pg_default: &pg_default
+default: &default
   adapter: postgresql
   encoding: unicode
   host: localhost
@@ -8,18 +8,13 @@ pg_default: &pg_default
   reaping_frequency: <%= Integer(ENV.fetch("DB_REAPING_FREQUENCY", 10)) %>
   timeout: 5000
 
-default: &default
-  adapter: sqlite3
-  pool: 5
-  timeout: 5000
-
 development:
   <<: *default
-  database: db/development.sqlite3
+  database: booster-kit-swift-api_development
 
 test:
   <<: *default
-  database: db/test.sqlite3
+  database: booster-kit-swift-api_test
   min_messages: warning
 
 production: &deploy
