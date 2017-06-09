@@ -1,0 +1,9 @@
+machine:
+  environment:
+    APPLICATION_ENVIRONMENT: development
+    APPLICATION_HOST: localhost:3000
+    RACK_ENV: development
+    RAILS_ENV: development
+    CORS_ORIGINS: localhost
+    ROLLBAR_CLIENT_ACCESS_TOKEN: ''
+    ROLLBAR_SERVER_ACCESS_TOKEN: ''
