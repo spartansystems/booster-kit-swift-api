@@ -15,14 +15,12 @@
 
 one:
   albumId: 1
-  id: 1
   title: MyString
   url: MyString
   thumbnailUrl: MyString
 
 two:
   albumId: 1
-  id: 1
   title: MyString
   url: MyString
   thumbnailUrl: MyString
